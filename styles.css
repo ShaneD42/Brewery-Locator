@@ -1,0 +1,57 @@
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
+
+input {
+  height: 20px;
+  width: 160px;
+  margin: auto;
+
+}
+.header {
+  background-color: skyblue;
+}
+
+.userlocation {
+  float: left;
+  width: 25%;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid black;
+
+}
+
+.addressbox {
+  text-align: center;
+
+}
+
+.button {
+  background-color: skyblue;
+  border: 1px solid black;
+  height: 20px;
+  width: 115px;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.listings {
+  border: 1px solid black;
+  width: 25%;
+  height: 750px;
+  box-sizing: border-box;
+  float; left;
+
+}
+
+#map {
+ height: 750px;
+ width: 75%;
+ float: right;
+
+}

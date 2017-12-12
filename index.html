@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brewery Locator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h3>LOCATE A BREWERY NEAR YOU!</h3>
+    </div><div class="userlocation">What is your address?
+      <div class="addressbox">
+        <input type="text" placeholder="ENTER ADDRESS HERE" id="search" name="search">
+      </div>
+    <div class="button" id="findBreweries">Find Breweries!</div></div>
+    <div id="map"></div><div class="listings" id="listings">listings</div>
+  </body>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSGGxwR4nSLuVZlNjj_cozRakQsNmeZnU&libraries=places&callback=initMap">
+  </script>
+
+<!-- &libraries=places -->
+
+  <!-- <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSGGxwR4nSLuVZlNjj_cozRakQsNmeZnU&callback=initMap">
+  </script> -->
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSGGxwR4nSLuVZlNjj_cozRakQsNmeZnU&libraries=places&callback=initMap"></script> -->
+</html>
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSGGxwR4nSLuVZlNjj_cozRakQsNmeZnU&libraries=places"></script> -->
