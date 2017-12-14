@@ -26,7 +26,6 @@
 // };
 
 
-let locations = [];
 let map;
 let infowindow;
 
@@ -43,7 +42,7 @@ function initMap(url) {
     });
 
     // To add the marker to the map, call setMap();
-    homeMarker.setMap(map);
+    // homeMarker.setMap(map);
 
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -64,31 +63,43 @@ function initMap(url) {
 }
 
 function callback(results, status) {
-  if (status === google.maps.places.PlacesServiceStatus.OK) {
+  // let locations = [];
+  // let clearField = function() {
+  // $('#listings').empty();
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
     for (let i = 0; i < results.length; i++) {
       createMarker(results[i]);
       let p = $('<p></p>')
-      p.text(results[i].name + " " + results[i].vicinity)
+      let placesNearMe = results[i].name + " " + results[i].vicinity
+      p.text(placesNearMe)
       $('#listings').append(p)
-      locations.push();
-      locations = []
-    }
 
+
+      // $('.button').click(function() {
+      //   $('#listings').empty();
+      //   $()
+      // }
+
+      // $.get('/url/', function(data){
+      //   $(data).find().appendTo();
+      // });
+      //
+      // $('#selector').append($('<div></div>').load(url));
+
+      // locations = []
+      // locations.push();
+      }
+    }
   }
-}
+    // } clearField();
+
+// } locations = [];
+
 
 let finder = $('#findBreweries')
 finder.click(function(e) {
   initMap("https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDSGGxwR4nSLuVZlNjj_cozRakQsNmeZnU&address=" + $('#search').val())
-  // $.get("https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDSGGxwR4nSLuVZlNjj_cozRakQsNmeZnU&address=" + $('#search').val(), function(results) {
-  //   for (let i = 0; i < results.length; i++) {
-  //     let names = results[i].name;
-  //     let address = results[i].vicinity;
-  //     let p = $('<p></p>')
-  //     p.text(names + " " + address)
-  //     $('#listings').append(p)
-  //   }
-  // })
+$('#listings').empty().append()
 })
 
 
