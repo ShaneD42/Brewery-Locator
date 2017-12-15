@@ -3,25 +3,33 @@ body, html {
   width: 100%;
   height: 100%;
   margin-left: 0px;
+  padding-top: 0px;
 }
 
 input {
   height: 20px;
-  width: 160px;
+  width: 180px;
   margin: auto;
+}
 
-}
 .header {
-  background-color: skyblue;
+  /*background-color: #00ccff;*/
+  background-color: #f5f5dc;
+  padding-top: 0px;
+  /*padding-top: 5px;*/
+  /*padding-bottom: 5px;*/
 }
+
+/*background-color: #f5f5dc*/
 
 .userlocation {
+  background-color: #f5f5dc;
   float: left;
   width: 25%;
   height: 100px;
   box-sizing: border-box;
-  border: 1px solid black;
-
+  border: 1px solid #00ccff;
+  display: inline-block;
 }
 
 .addressbox {
@@ -30,22 +38,24 @@ input {
 }
 
 .button {
-  background-color: skyblue;
-  border: 1px solid black;
+  background-color: #00ccff;
+  border: 1px solid #0033cc;
   height: 20px;
   width: 115px;
   border-radius: 5px;
   text-align: center;
-  margin: auto;
+  margin-left: 75px;
   margin-top: 10px;
 }
 
 .listings {
-  border: 1px solid black;
+background-color:  #f5f5dc;
+  border: 1px solid #00ccff;
   width: 25%;
-  height: 750px;
+  height: 650px;
   box-sizing: border-box;
   float; left;
+  overflow: scroll;
 
 }
 
