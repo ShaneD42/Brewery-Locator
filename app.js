@@ -61,17 +61,3 @@ function createMarker(place) {
 // }
 // var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 //
-// var newMarker = new google.maps.Marker({
-//     position: currentLoc,
-//     title:"Hello World!"
-// });
-//
-// // To add the marker to the map, call setMap();
-// marker.setMap(map);
-
-// function createMarker(place) {
-//   let placeLoc = place.geometry.location;
-//   let marker = new google.maps.Marker({
-//     map: map,
-//     position: place.geometry.location
-//   });
