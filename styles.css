@@ -4,17 +4,19 @@ body, html {
   height: 100%;
   margin-left: 0px;
   padding-top: 0px;
+  font-size: 18px;
 }
 
 input {
   height: 20px;
-  width: 180px;
+  width: 200px;
   margin: auto;
 }
 
 .container {
   padding: 20px;
   padding-top: 0px;
+  text-align: center;
 }
 
 .header {
@@ -24,16 +26,18 @@ input {
 
 .userlocation {
   background-color: #f5f5dc;
-  float: left;
   width: 25%;
   height: 100px;
   box-sizing: border-box;
   border: 1px solid #00ccff;
   display: inline-block;
+  padding-top: 5px;
+  text-align: left;
+  padding-left: 5px;
 }
 
 .addressbox {
-  text-align: center;
+  margin-top: 10px;
 
 }
 
@@ -43,19 +47,21 @@ input {
   height: 20px;
   width: 115px;
   border-radius: 5px;
-  text-align: center;
-  margin-left: 75px;
+  /* margin-left: 75px; */
+  font-size: 12px;
   margin-top: 10px;
 }
 
 .listings {
-background-color:  #f5f5dc;
+  background-color:  #f5f5dc;
   border: 1px solid #00ccff;
   width: 25%;
   height: 650px;
   box-sizing: border-box;
-  float; left;
+  /* float: left; */
   overflow: scroll;
+  text-align: left;
+  padding-left: 5px;
 
 }
 
