@@ -28,9 +28,10 @@ function callback(results, status) {
     for (let i = 0; i < results.length; i++) {
       createMarker(results[i]);
       let p = $('<p></p>')
-      let placesNearMe = ("Name: " + results[i].name + " " + "Address: " + results[i].vicinity + " Rating: " + results[i].rating)
+      let placesNearMe = (`Name: ${results[i].name} <br> Address: ${results[i].vicinity} Rating: ${results[i].rating}`)
       p.text(placesNearMe)
       $('#listings').append(p)
+      console.log(results)
     }
   }
 }
